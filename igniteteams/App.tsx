@@ -1,10 +1,8 @@
-// import {Groups} from '@screens/Groups';
-import {Players} from '@screens/Players';
-// import {NewGroup} from '@screens/NewGroup';
 import {StatusBar} from 'react-native';
 import {ThemeProvider} from 'styled-components/native';
 
 import theme from './src/theme';
+import {Routes} from '@routes/index';
 
 export default function App() {
   return (
@@ -14,9 +12,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <Players />
-      {/* <Groups /> */}
-      {/* <NewGroup /> */}
+      <Routes />
     </ThemeProvider>
   );
 }
